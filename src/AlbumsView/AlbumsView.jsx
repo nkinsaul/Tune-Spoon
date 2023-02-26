@@ -3,7 +3,7 @@ import './AlbumsView.css'
 function AlbumsView() {
     return (
       <div className="AlbumsView">
-        <h1>hi</h1>
+        <h1>HOME VIEW</h1>
       </div>
     )
   }
