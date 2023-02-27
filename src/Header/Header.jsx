@@ -9,7 +9,7 @@ function Header() {
     return (
       <div className="header">
         <Link to={'/'}>
-            {(activePage == '/') 
+            {(activePage === '/') 
             ? <button className="header-button active">Home</button>
             : <button className="header-button">Home</button>
         }
@@ -17,7 +17,7 @@ function Header() {
         </Link>
         <h1>Tune Spoon</h1>
         <Link to={'/favorites'}>
-            {(activePage == '/favorites') 
+            {(activePage === '/favorites') 
             ? <button className="header-button active">Favorites</button>
             : <button className="header-button">Favorites</button>
         }

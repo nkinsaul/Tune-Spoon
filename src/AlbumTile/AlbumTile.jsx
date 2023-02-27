@@ -11,6 +11,7 @@ const AlbumTile = ({album}) => {
         <img
             className="album-image"
             src={album.image}
+            alt={`${album.title}`}
         />
         </Link>
       </div>

@@ -5,6 +5,7 @@ import AlbumTile from '../AlbumTile/AlbumTile'
 
 function AlbumsView() {
     const [albums, storeAlbums] = React.useState([])
+    const [loading, setload] = React.useState(true)
 
     const retrieveAlbums = () => {
         getAlbums()
@@ -19,11 +20,13 @@ function AlbumsView() {
 
     return (
       <div className="albums-view">
-        {albums.map((album, index) => {
+        {/* {(loading) && <p>Loading...</p>} */}
+        {(albums) && albums.map((album, index) => {
             return (
                 <AlbumTile album={album} key={index} />
             )
         })}
+
       </div>
     )
   }
