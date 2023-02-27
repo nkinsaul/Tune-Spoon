@@ -17,7 +17,10 @@ function Header() {
         </Link>
         <h1>Tune Spoon</h1>
         <Link to={'/favorites'}>
-            <button className="header-button">Favorites</button>
+            {(activePage == '/favorites') 
+            ? <button className="header-button active">Favorites</button>
+            : <button className="header-button">Favorites</button>
+        }
         </Link>
       </div>
     )
