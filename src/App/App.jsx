@@ -9,12 +9,11 @@ import { Route, Routes } from "react-router-dom"
 function App() {
   return (
     <div className="App">
-      <Header element={<Header />}/>
+      <Header />
       <Routes>
-        <Route path="/" element={<AlbumsView />}>
-          <Route index element={<AlbumsView />} />
-          <Route path=":albumID" element={<Album/>} />
-        </Route>
+        <Route path="/" element={<AlbumsView />} />
+        <Route path='/album' element={<Album />} />
+        <Route path=":albumID" element={<Album />} />
         <Route path="/favorites" element={<Favorites />} />
       </Routes>
     </div>
