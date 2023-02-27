@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 10vh;
+    border-bottom: rgba(0, 0, 0, 0.302) solid;
+}
+
+.header-button {
+    width: 15vw;
+    height: 10vh;
+    font-size: 1.5em;
+    border: none;
+    background-color: white;
+    color: #7f7f7f;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.active {
+    color: black;
+    font-weight: bold;  
+}
+
