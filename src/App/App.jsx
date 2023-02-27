@@ -1,6 +1,8 @@
 // import { useState } from "react"
 import './App.css'
 import AlbumsView from "../AlbumsView/AlbumsView"
+import ReviewForm from "../ReviewForm/ReviewForm"
+import Error from "../Error/Error"
 import Album from "../Album/Album"
 import Favorites from "../Favorites/Favorites"
 import Header from "../Header/Header"
@@ -12,12 +14,14 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<AlbumsView />} />
-        <Route path='/album' element={<Album />} />
-        <Route path=":albumID" element={<Album />} />
+        <Route exact path="/:albumID" element={<Album/>} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="*" element={<Error />}/>
       </Routes>
+
     </div>
   )
 }
+
 
 export default App
