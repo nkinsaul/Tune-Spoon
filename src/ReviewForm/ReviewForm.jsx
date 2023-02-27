@@ -12,7 +12,7 @@ function ReviewForm() {
 
 
   const handleSubmit = (e) => {
-    console.log(e.target.review.value);
+    // console.log(e.target.review.value);
 
     e.preventDefault();
     fetch("http://localhost:3000/albums/reviews", {
@@ -55,6 +55,6 @@ function ReviewForm() {
     </>
   );
 }
-console.log('this is the location from getID', getID)
-console.log('the ID', newID)
+// console.log('this is the location from getID', getID)
+// console.log('the ID', newID)
   export default ReviewForm
