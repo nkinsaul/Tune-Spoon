@@ -1,6 +1,7 @@
 import './AlbumsView.css'
 import React from 'react'
 import { getAlbums } from '../Utilities/APICalls'
+import AlbumTile from '../AlbumTile/AlbumTile'
 
 function AlbumsView() {
     const [albums, storeAlbums] = React.useState([])
@@ -18,7 +19,11 @@ function AlbumsView() {
 
     return (
       <div className="AlbumsView">
-        <h1>hi</h1>
+        {albums.map((album, index) => {
+            return (
+                <AlbumTile album={album} key={index} />
+            )
+        })}
       </div>
     )
   }
