@@ -15,7 +15,7 @@ function ReviewForm() {
     // console.log(e.target.review.value);
 
     e.preventDefault();
-    fetch("http://localhost:3000/albums/reviews", {
+    fetch("http://localhost:8080/albums/reviews", {
       method: "POST",
       headers: {
         Accept: "application/json",

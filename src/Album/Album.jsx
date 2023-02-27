@@ -27,7 +27,7 @@ function Album() {
         </div>
         <div className='details-container'>
           <p>{album.description}</p>
-          <p>{album.length}</p>
+          <p>Length: {Math.round(album.length/60)} min.</p>
           <Link to="/">
           <button >GO BACK HOME</button>
           </Link>
