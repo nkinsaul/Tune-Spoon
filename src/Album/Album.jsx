@@ -7,12 +7,8 @@ import React from 'react';
 
 function Album() {
     return (
-      <div>
-        <h1>SINGLE ALBUM VIEW</h1>
-        <Link to="/">
-          <button >GO BACK HOME</button>
-        </Link>
-        <ReviewForm />
+      <div className="Album">
+        <h1>album</h1>
       </div>
     )
   }

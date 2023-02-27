@@ -11,15 +11,12 @@ import { Route, Routes } from "react-router-dom"
 function App() {
   return (
     <div className="App">
-      <Header element={<Header />}/>
+      <Header />
       <Routes>
-        <Route path="/albums" element={<AlbumsView />} />
-          <Route index element={<AlbumsView />} >
-        </Route>
-        <Route exact path="/album/:albumID" element={<Album/>} />
-        <Route exact path="/album/:albumID/reviews" element={<ReviewForm/>} />
+        <Route path="/" element={<AlbumsView />} />
+        <Route path=":albumID" element={<Album />} />
         <Route path="/favorites" element={<Favorites />} />
-        <Route path="*" element={<Error />}/>
+        <Route path="*" element={<Error />} />
       </Routes>
 
     </div>
