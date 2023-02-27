@@ -9,7 +9,7 @@ import { Route, Routes } from "react-router-dom"
 function App() {
   return (
     <div className="App">
-      <Header element={<Header />}/>
+      <Header />
       <Routes>
         <Route exact path="/" element={<AlbumsView />} />
         <Route exact path="/:albumID" element={<Album />} />
