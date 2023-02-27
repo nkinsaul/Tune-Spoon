@@ -5,10 +5,14 @@ const AlbumTile = ({album}) => {
     console.log(album)
     return (
       <div className="album-tile">
+        <Link to={{
+            pathname: `/${album.id}`
+        }}>
         <img
             className="album-image"
             src={album.image}
         />
+        </Link>
       </div>
     )
   }
