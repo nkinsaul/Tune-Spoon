@@ -19,12 +19,20 @@ function Album() {
   })
 
     return (
-      <div>
-        <h1>{album.title}</h1>
-        <Link to="/">
+      <div className='album-container'>
+        <div className='image-container'>
+          <h1>{album.title}</h1>
+          <h2>{album.artist}</h2>
+          <img className="album-artwork" src={album.image} alt={album.title}/>
+        </div>
+        <div className='details-container'>
+          <p>{album.description}</p>
+          <p>{album.length}</p>
+          <Link to="/">
           <button >GO BACK HOME</button>
-        </Link>
-        <ReviewForm />
+          </Link>
+          <ReviewForm />
+        </div>
       </div>
     )
   }
