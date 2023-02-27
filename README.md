@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+#Tune Spoon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Preview
 
-## Available Scripts
+## Getting Started
+1. Clone the repo
+   ```sh
+   git clone git@github.com:nkinsaul/tune-spoon.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run npm start
+   ```sh
+   npm start
+   ```
+4. Use the Link that is given in the Terminal & Open in Browser
+   ```sh
+   Example: http://localhost:3000/
+   ```
 
-In the project directory, you can run:
+## Contributors
+- Adam Hughes [LinkedIn](https://www.linkedin.com/in/front-end-adam/), [Github](https://github.com/ajh0050)<br>
+- Gus Deribeaux [LinkedIn](https://www.linkedin.com/in/gus-deribeaux-562a511aa/), [Github](https://github.com/gderibeaux)<br>
+- Natalie Kinsaul Lange [LinkedIn](https://www.linkedin.com/in/natalie-kinsaul/), [Github](https://github.com/nkinsaul/)<br>
+- Zac Walters [LinkedIn](https://www.linkedin.com/in/zac-walters-67951b250/), [Github](https://github.com/zacwalters4)<br>
 
-### `npm start`
+## Learning Goals
+- Build our own backend [Hosted here](https://tune-spoon-db-v1.herokuapp.com/) with [docs here](https://github.com/nkinsaul/Tune-Spoon-api)
+- Use that backend to build a React app that Gets and Posts data to our hosted database
+- Integrate react router for a seemless single page application experience that mimics a multipage site
+- Develop robust end-to-end testing through Cypress
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Description
+Tune Spoon is a fun single-page application that allows users to view a currated list of albums and select albums they have listened to in order to display additional album details, add the chosen album to their favorites, or to a leave a review comment on the album page. This project was accomplished by a team of 4 turing students in our 3rd mod and this was our first time building a full stack application from scratch. This is the front end repo, the backend repo can be found [here](https://github.com/nkinsaul/Tune-Spoon-api)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Full Application Tech Stack
+- React.js
+- Cypress.js
+- Node.sj
+- Express.js 
+- Knex
+- PostgreSQL
+- Heroku
+- HTML
+- CSS
+- Mocha
+- Chai
+- Git
+- Github
+- Javascript
