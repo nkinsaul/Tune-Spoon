@@ -13,11 +13,8 @@ function App() {
     <div className="App">
       <Header element={<Header />}/>
       <Routes>
-        <Route path="/albums" element={<AlbumsView />} />
-          <Route index element={<AlbumsView />} >
-        </Route>
-        <Route exact path="/album/:albumID" element={<Album/>} />
-        <Route exact path="/album/:albumID/reviews" element={<ReviewForm/>} />
+        <Route path="/" element={<AlbumsView />} />
+        <Route exact path="/:albumID" element={<Album/>} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="*" element={<Error />}/>
       </Routes>
