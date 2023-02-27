@@ -21,3 +21,8 @@
     font-weight: bold;
 }
 
+.active {
+    color: black;
+    font-weight: bold;  
+}
+
