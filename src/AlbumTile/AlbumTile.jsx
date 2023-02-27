@@ -1,11 +1,14 @@
 import './AlbumTile.css'
 import { Link } from 'react-router-dom'
 
-const AlbumTile = () => {
-
+const AlbumTile = ({album}) => {
+    console.log(album)
     return (
       <div className="album-tile">
-        <h1>test</h1>
+        <img
+            className="album-image"
+            src={album.image}
+        />
       </div>
     )
   }

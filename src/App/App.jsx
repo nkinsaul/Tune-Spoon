@@ -11,10 +11,9 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<AlbumsView />}>
-          <Route index element={<AlbumsView />} />
-          <Route path=":albumID" element={<Album/>} />
-        </Route>
+        <Route path="/" element={<AlbumsView />} />
+        <Route path='/album' element={<Album />} />
+        <Route path=":albumID" element={<Album />} />
         <Route path="/favorites" element={<Favorites />} />
       </Routes>
     </div>

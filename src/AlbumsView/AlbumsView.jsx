@@ -18,7 +18,7 @@ function AlbumsView() {
     }, [])
 
     return (
-      <div className="AlbumsView">
+      <div className="albums-view">
         {albums.map((album, index) => {
             return (
                 <AlbumTile album={album} key={index} />
