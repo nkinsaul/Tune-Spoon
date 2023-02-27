@@ -1,5 +1,6 @@
 import './AlbumTile.css'
 import { Link } from 'react-router-dom'
+import PropTypes from "prop-types";
 
 const AlbumTile = ({album}) => {
     console.log(album)
@@ -19,3 +20,15 @@ const AlbumTile = ({album}) => {
   }
   
   export default AlbumTile
+
+  AlbumTile.propTypes = {
+    album: PropTypes.shape({
+        artist: PropTypes.string.isRequired,
+        createdAt: PropTypes.string.isRequired,
+        favorite: PropTypes.bool.isRequired,
+        id: PropTypes.number.isRequired,
+        image: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        updatedAt: PropTypes.string.isRequired
+    }).isRequired
+  }
