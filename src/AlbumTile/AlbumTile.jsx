@@ -2,6 +2,7 @@ import './AlbumTile.css'
 import { Link } from 'react-router-dom'
 
 const AlbumTile = ({album}) => {
+
     return (
       <div className="album-tile">
         <Link to={{
