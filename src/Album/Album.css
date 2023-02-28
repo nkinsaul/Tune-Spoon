@@ -27,3 +27,8 @@
 .album-artwork {
   width: 100%;
 }
+
+.track-list {
+  display: flex;
+  flex-direction: column;
+}

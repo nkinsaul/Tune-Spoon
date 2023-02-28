@@ -11,6 +11,10 @@ function Album() {
   const path = location.pathname.split('/')
   const albumID = path[1]
 
+  const formatTrackList = () => {
+    return album['track_list']?.map((track, index) => <p key={index}>{index + 1}.  {track}</p>)
+  }
+
   useEffect(() => {
     getAlbumDetails(albumID)
     .then(album =>  setAlbum(album[0]))
@@ -23,7 +27,9 @@ function Album() {
           <h1>{album.title}</h1>
           <h2>{album.artist}</h2>
           <img className="album-artwork" src={album.image} alt={album.title}/>
-          {album['track_list']?.map((track, index) => <p key={index}>{index + 1}.  {track}</p>)}
+        </div>
+        <div className='track-list'>
+          {formatTrackList()}
         </div>
         <div className='details-container'>
           <p>Produced by {album.producer}</p>
