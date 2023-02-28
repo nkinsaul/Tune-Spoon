@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import ReviewForm from "../ReviewForm/ReviewForm";
 import {getAlbumDetails} from '../Utilities/APICalls'
-const dayjs = require('dayjs')
 
 function Album() {
   const [album, setAlbum] = useState({})
@@ -45,8 +44,8 @@ function Album() {
         <div className='details-container'>
           <p>Release Date: {album.release_date}</p>
           <p>Produced by {album.producer}</p>
-          <p>Length: {Math.round(album.length/60)} min.</p>
-          <p>Genres: | {genres}</p>
+          <p>{Math.round(album.length/60)} min.</p>
+          <p>| {genres}</p>
           <p>{album.description}</p>
           <Link to="/">
           <button >GO BACK HOME</button>
