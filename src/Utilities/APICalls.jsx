@@ -1,11 +1,11 @@
 export const getAlbums = () => {
     return (
-        fetch('http://localhost:8080/albums')
+        fetch('https://tune-spoon-db-v1.herokuapp.com/albums')
         .then(response => {
             if (response.ok) {
                 return response.json()
             } else {
-                throw new Error()
+                throw new Error('Something went wrong')
             }
         })
     )
