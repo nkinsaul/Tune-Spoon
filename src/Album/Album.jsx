@@ -29,7 +29,7 @@ function Album() {
     getAlbumDetails(albumID)
     .then(album =>  setAlbum(album[0]))
     .catch(error => error.status)
-  },[])
+  })
 
     return (
       <div className='album-container'>
