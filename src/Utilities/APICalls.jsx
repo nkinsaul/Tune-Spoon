@@ -13,7 +13,7 @@ export const getAlbums = () => {
 
 export const getAlbumDetails = (albumID) => {
   return (
-    fetch(`http://localhost:8080/album/${albumID}`)
+    fetch(`https://tune-spoon-db-v1.herokuapp.com/album/${albumID}`)
     .then(response => {
       if (!response.ok) {
         throw new Error()

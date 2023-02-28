@@ -1,5 +1,5 @@
 import './Album.css'
-import React, { useState, useEffect }from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import ReviewForm from "../ReviewForm/ReviewForm";
 import {getAlbumDetails} from '../Utilities/APICalls'
@@ -11,9 +11,8 @@ function Album() {
   const path = location.pathname.split('/')
   const albumID = path[1]
 
-  const formatTrackList = () => {
-    return album['track_list']?.map((track, index) => <p key={index}>{index + 1}.  {track}</p>)
-  }
+  const formatTrackList = album['track_list']?.map((track, index) => <p className="track" key={index}>{index + 1}.  {track}</p>)
+  
 
   useEffect(() => {
     getAlbumDetails(albumID)
@@ -29,7 +28,7 @@ function Album() {
           <img className="album-artwork" src={album.image} alt={album.title}/>
         </div>
         <div className='track-list'>
-          {formatTrackList()}
+          {formatTrackList}
         </div>
         <div className='details-container'>
           <p>Produced by {album.producer}</p>

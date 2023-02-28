@@ -24,11 +24,11 @@ const AlbumTile = ({album}) => {
   AlbumTile.propTypes = {
     album: PropTypes.shape({
         artist: PropTypes.string.isRequired,
-        createdAt: PropTypes.string.isRequired,
+        createdAt: PropTypes.string,
         favorite: PropTypes.bool.isRequired,
         id: PropTypes.number.isRequired,
         image: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
-        updatedAt: PropTypes.string.isRequired
+        updatedAt: PropTypes.string
     }).isRequired
   }
