@@ -14,4 +14,10 @@ describe('Home page testing', () => {
     cy.get('img[alt="Brothers in Arms"]')
       .should('have.attr', 'src', 'https://lastfm.freetls.fastly.net/i/u/770x0/d3394952d369468ec64a7d5582c013cc.jpg#d3394952d369468ec64a7d5582c013cc')
   })
+
+  it('should redirect the user to the single albums page when clicked', () => {
+    cy.get('img[alt="WLFGRL"]')
+      .click()
+      .url().should('include', '/22')
+  })
 })
