@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import PropTypes from "prop-types";
 
 const AlbumTile = ({album}) => {
-    console.log(album)
     return (
       <div className="album-tile">
         <Link to={{
